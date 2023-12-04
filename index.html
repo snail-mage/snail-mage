@@ -541,7 +541,7 @@
 			
 			switch (selectedOption) {
             case 'rop':
-                outputText += firstLast + " (ID:" + hhidField + ")" + "is requesting to have their coverage reinstated due to being terminated for not providing the proper documentation in the requested timeframe. The consumer stated they did not upload the documentation required because " + generalropreason + ". The consumer will provide proof of their " + ropdocument + ". I have provided the HH I.D#, TIC#, and FAX# for the documentation to be attached to the ticket. I let the consumer know they have 7 days to provide their documentation. The ticket will be closed if documents have not been received within the 7-day period. The consumer stated that they are willing to pay any balance to bring their account to current status.";
+                outputText += firstLast + " (ID:" + hhidField + ")" + " is requesting to have their coverage reinstated due to being terminated for not providing the proper documentation in the requested timeframe. The consumer stated they did not upload the documentation required because " + generalropreason + ". The consumer will provide proof of their " + ropdocument + ". I have provided the HH I.D#, TIC#, and FAX# for the documentation to be attached to the ticket. I let the consumer know they have 7 days to provide their documentation. The ticket will be closed if documents have not been received within the 7-day period. The consumer stated that they are willing to pay any balance to bring their account to current status.";
                 break;
 					
             case 'incomeRop':
@@ -549,11 +549,11 @@
                 break;
 					
 			case 'pdm':
-				outputText += firstLast + " (ID:" + hhidField + ")" + " is requesting to have their coverage reinstated due to being terminated for not providing the proper documentation in the requested timeframe.  The consumer will provide proof of their " + pdmdocument + ". I have provided the HH I.D#, TIC#, and FAX# for the documentation to be attached to the ticket. I let the consumer know they have 7 days to provide their documentation. The ticket will be closed if documents have not been received within the 7-day period. The consumer stated that they are willing to pay any balance to bring their account to current status." + "<br>" + firstLast + " (ID:" + hhidField + ")" + "were advised that they will need to clear up the issue with the " + pdmsource + ", where this is information is being obtained.";
+				outputText += firstLast + " (ID:" + hhidField + ")" + " is requesting to have their coverage reinstated due to being terminated for not providing the proper documentation in the requested timeframe.  The consumer will provide proof of their " + pdmdocument + ". I have provided the HH I.D#, TIC#, and FAX# for the documentation to be attached to the ticket. I let the consumer know they have 7 days to provide their documentation. The ticket will be closed if documents have not been received within the 7-day period. The consumer stated that they are willing to pay any balance to bring their account to current status." + "<br>" + firstLast + " (ID:" + hhidField + ")" + " was advised that they will need to clear up the issue with the " + pdmsource + ", where this is information is being obtained.";
 				break;
 					
             case 'carrierReinstatement':
-				outputText += firstLast + " (ID:" + hhidField + ")" + " is requesting to have their " + reinstateplan + " plan reinstated due to being terminated for nonpayment. The consumer stated they did not pay due to " + nonpayment + ". I advised the consumer they will need to pay any past due amounts to become current. " + firstLast + "stated that they are willing to pay any balance to reinstate their plan." + "<br>" + "Carrier: " + carriername + "<br>" + "Plan: " + reinstateplan + "<br>" + "Effective Dates: " + reinstateefdates + "<br>" + "Net Premium: " + reinstatenet;
+				outputText += firstLast + " (ID:" + hhidField + ")" + " is requesting to have their " + reinstateplan + " plan reinstated due to being terminated for nonpayment. The consumer stated they did not pay due to " + nonpayment + ". I advised the consumer they will need to pay any past due amounts to become current. " + firstLast + " stated that they are willing to pay any balance to reinstate their plan." + "<br>" + "Carrier: " + carriername + "<br>" + "Plan: " + reinstateplan + "<br>" + "Effective Dates: " + reinstateefdates + "<br>" + "Net Premium: " + reinstatenet;
 				break;
 					
             case 'etdc':
@@ -569,7 +569,7 @@
 					outputText += "Agent " + pwagentname + " called in because they are unable to get the account unlocked. I have changed the status of the account to active & have exhausted my options on triaging the situation. Ticket has been created to get the Agent access to their account. The agent " + emailAccessText + " have access to the email on file.";
 					pwAgentSection.style.display = 'block';
 				} else if (consumerRadio.checked) {
-					outputText += "Consumer " + firstLast + " (ID:" + hhidField + ")" + "called in because they are unable to get the account unlocked. I have changed the status of the account to active & have exhausted my options on triaging the situation. Ticket has been created to get the Agent access to their account. The agent " + emailAccessText + " have access to the email on file.";
+					outputText += "Consumer " + firstLast + " (ID:" + hhidField + ")" + "called in because they are unable to get the account unlocked. I have changed the status of the account to active & have exhausted my options on triaging the situation. Ticket has been created to get the consumer access to their account. The consumer " + emailAccessText + " have access to the email on file.";
 					pwAgentSection.style.display = 'none';
 				}
 				break;
@@ -593,11 +593,11 @@
 				break;
 					
             case 'appLoop':
-				outputText += "Agent "+ apploopagent + "called needing assistance on updating consumer " + firstLast + " (ID:" + hhidField + ")'s " + "income. After completing the application, the dashboard states “Edit application” or “Start New Application” and does not save the updated app. I went to the My Applications tab and saw the updated app under past applications. Please review and assist.";
+				outputText += "Agent "+ apploopagent + " called needing assistance on updating consumer " + firstLast + " (ID:" + hhidField + ")'s " + "income. After completing the application, the dashboard states “Edit application” or “Start New Application” and does not save the updated app. I went to the My Applications tab and saw the updated app under past applications. Please review and assist.";
 				break;
 					
             case '500Error':
-				outputText += "Agent " + fiveerroragent + " called in stating that there is a 500-error message that populates on the screen when they submit the consumer " + firstLast + " (ID:" + hhidField + ")'s" + "application. Attached is a screenshot of the message. I had the agent change their browser and attempted to triage the issue but received the same message on my end. Please assist, consumer wants to submit the app so she can shop for plans.";
+				outputText += "Agent " + fiveerroragent + " called in stating that there is a 500-error message that populates on the screen when they submit the consumer " + firstLast + " (ID:" + hhidField + ")'s application. Attached is a screenshot of the message. I had the agent change their browser and attempted to triage the issue but received the same message on my end. Please assist, consumer wants to submit the app so they can shop for plans.";
 				break;
 					
             case 'nullError':
