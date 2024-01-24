@@ -24,8 +24,8 @@
 			font-size: 32px;
 			background-image: linear-gradient(to bottom left, white, cornflowerblue);
 			color: transparent;
-			background-clip: text;
 			-webkit-background-clip: text;
+			background-clip: text;
 		}
 		
 		h4 {
@@ -218,6 +218,8 @@
 		.question-set {
 			display: none;
         }
+
+		
 		
 		.name {
 			display: none;
@@ -1358,7 +1360,7 @@
 				break;
 					
 			case 'correction':
-				subjectText += correctiontopic + "Correction";
+				subjectText += correctiontopic + " Correction";
 					
                 outputText += firstLast + " (ID:" + hhidField + ") stated " + correctioncarrier + " has their " + correctiontopic + "displayed as " + correctionold + ", but Pennie correctly reflects their " + correctiontopic + " as " + correctionupdate + " on Policy ID# (" + correctionpolicy + ").";
                 outputText += "<br><br>" + "Additional Notes: " + notesField;
